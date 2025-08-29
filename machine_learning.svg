@@ -1,0 +1,67 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)" rx="15"/>
+  
+  <!-- Data points -->
+  <circle cx="80" cy="220" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="120" cy="180" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="160" cy="160" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="200" cy="120" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="240" cy="100" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="280" cy="90" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="320" cy="80" r="4" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Trend line -->
+  <path d="M 80 220 Q 200 120 320 80" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.9"/>
+  
+  <!-- Chart area -->
+  <path d="M 80 220 L 120 180 L 160 160 L 200 120 L 240 100 L 280 90 L 320 80 L 320 240 L 80 240 Z" fill="url(#chartGradient)"/>
+  
+  <!-- Axes -->
+  <line x1="70" y1="70" x2="70" y2="250" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  <line x1="70" y1="250" x2="330" y2="250" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Algorithm symbol -->
+  <g transform="translate(50, 30)">
+    <rect x="0" y="0" width="60" height="35" rx="8" fill="rgba(255,255,255,0.2)" stroke="#ffffff" stroke-width="2"/>
+    <text x="30" y="22" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="12">ML</text>
+  </g>
+  
+  <!-- Data flow arrows -->
+  <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 140 50 L 180 50" marker-end="url(#arrow)"/>
+    <path d="M 220 50 L 260 50" marker-end="url(#arrow)"/>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" opacity="0.6"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="200" y="280" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Machine Learning</text>
+  
+  <!-- Animated elements -->
+  <circle cx="350" cy="50" r="3" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="40" r="2" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="360" cy="35" r="2.5" fill="#ffffff" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
